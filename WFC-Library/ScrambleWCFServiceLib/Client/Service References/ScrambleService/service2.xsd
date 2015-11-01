@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/ScrambleWCFServiceLib" />
+  <xs:element name="ScrambledWord">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScrambledWordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ScrambleWCFServiceLib" minOccurs="0" name="ScrambledWordResult" nillable="true" type="q1:Word" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WasCorrect">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scrambledVal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userAnswer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WasCorrectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WasCorrectResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

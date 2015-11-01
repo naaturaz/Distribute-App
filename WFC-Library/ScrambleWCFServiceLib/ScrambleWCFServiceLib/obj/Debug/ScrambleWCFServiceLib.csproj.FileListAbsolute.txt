@@ -1,0 +1,6 @@
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\bin\Debug\ScrambleWCFServiceLib.dll.config
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\bin\Debug\ScrambleWCFServiceLib.dll
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\bin\Debug\ScrambleWCFServiceLib.pdb
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Debug\ScrambleWCFServiceLib.csprojResolveAssemblyReference.cache
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Debug\ScrambleWCFServiceLib.dll
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Debug\ScrambleWCFServiceLib.pdb

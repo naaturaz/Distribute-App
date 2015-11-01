@@ -1,0 +1,9 @@
+<publishData>
+  <publishTarget publishUrl="http://localhost/">
+    <file relUrl="ScrambleWCFServiceLib.Scramble.svc" publishTime="10/30/2015 20:46:59" />
+    <file relUrl="bin/ScrambleWCFServiceLib.dll.config" publishTime="10/27/2015 12:58:18" />
+    <file relUrl="bin/ScrambleWCFServiceLib.pdb" publishTime="10/30/2015 20:44:44" />
+    <file relUrl="Web.config" publishTime="10/27/2015 12:58:18" />
+    <file relUrl="bin/ScrambleWCFServiceLib.dll" publishTime="10/30/2015 20:44:44" />
+  </publishTarget>
+</publishData>
