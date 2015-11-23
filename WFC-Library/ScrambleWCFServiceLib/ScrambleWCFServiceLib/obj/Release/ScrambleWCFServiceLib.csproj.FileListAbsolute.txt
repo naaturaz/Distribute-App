@@ -4,3 +4,9 @@ F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\Sc
 F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Release\ScrambleWCFServiceLib.dll
 F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Release\ScrambleWCFServiceLib.pdb
 F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Release\ScrambleWCFServiceLib.csprojResolveAssemblyReference.cache
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\ScrambleWCFServiceLib\bin\Release\ScrambleWCFServiceLib.dll.config
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\ScrambleWCFServiceLib\bin\Release\ScrambleWCFServiceLib.dll
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\ScrambleWCFServiceLib\bin\Release\ScrambleWCFServiceLib.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Release\ScrambleWCFServiceLib.csprojResolveAssemblyReference.cache
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Release\ScrambleWCFServiceLib.dll
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\ScrambleWCFServiceLib\obj\Release\ScrambleWCFServiceLib.pdb

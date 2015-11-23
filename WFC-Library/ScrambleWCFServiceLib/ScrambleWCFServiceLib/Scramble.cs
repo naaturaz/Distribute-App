@@ -1,4 +1,11 @@
-﻿
+﻿/**
+ *  File Name: Scramble.cs
+ *  File that holds all functionalities of the Scramble Service
+ *
+ *  Revision History:
+ *      4-Nov-2015: Wrote code
+ *      5-Nov-2015: Fixed standards
+ */
 
 using System;
 using System.Linq;

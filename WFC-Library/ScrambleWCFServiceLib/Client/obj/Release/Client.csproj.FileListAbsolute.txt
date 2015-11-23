@@ -6,3 +6,11 @@ F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\Cl
 F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\Client\obj\Release\Client.csprojResolveAssemblyReference.cache
 F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\Client\obj\Release\Client.exe
 F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\ScrambleWCFServiceLib\Client\obj\Release\Client.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\bin\Release\Client.exe.config
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\obj\Release\Client.exe
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\obj\Release\Client.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\bin\Release\Client.exe
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\bin\Release\Client.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\bin\Release\ScrambleWCFServiceLib.dll
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\bin\Release\ScrambleWCFServiceLib.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\WFC-Library\ScrambleWCFServiceLib\Client\obj\Release\Client.csprojResolveAssemblyReference.cache

@@ -1,4 +1,13 @@
-﻿using System.ServiceModel;
+﻿/**
+ *  File Name: IScramble.cs
+ *  Interface of the Scramble Service
+ *
+ *  Revision History:
+ *      4-Nov-2015: Wrote code
+ *      5-Nov-2015: Fixed standards
+ */
+
+using System.ServiceModel;
 
 namespace ScrambleWCFServiceLib
 {

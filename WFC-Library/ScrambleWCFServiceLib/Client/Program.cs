@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ *  File Name: Program.cs
+ *  Class the hold the thick client 
+ *
+ *  Revision History:
+ *      4-Nov-2015: Wrote code
+ *      5-Nov-2015: Fixed standards
+ */
+
+using System;
 using ScrambleWCFServiceLib;
 
 namespace Client
@@ -36,8 +45,6 @@ namespace Client
             }
             Console.ReadKey();
 
-            //ASK ASK
-            //Will call this method again so it can keep playing the game 
             ScrambleCall();
         }
     }
