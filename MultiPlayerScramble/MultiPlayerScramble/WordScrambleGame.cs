@@ -39,6 +39,11 @@ namespace MultiPlayerScramble
         [OperationBehavior]
         public string hostGame(String playerName, string hostAddress, String wordToScramble)
         {
+            if (userHostingTheGame != null && userHostingTheGame != "")
+            {
+                throw new FaultException<GameBeingHostedFault>(new GameBeingHostedFault());
+            }
+
             // TO BE COMPLETED BY YOU: Add exception and program logic
             userHostingTheGame = playerName;
             gameWords = new Word();
@@ -62,18 +67,6 @@ namespace MultiPlayerScramble
                 throw new FaultException<HostCantJoinGameFault>(new HostCantJoinGameFault());
             }
 
-            //try
-            //{
-            //    test.scrambledWord.ToString();
-            //    return new Word();
-            //}
-            //catch (NullReferenceException e)
-            //{
-            //    var fal = new GameIsNotBeingHostedFault();
-            //    throw new FaultException<GameIsNotBeingHostedFault>(fal);
-            //    //throw new FaultException(e.Message, new FaultCode("GameIsNotBeingHostedFault"));
-            //}
-
             // TO BE COMPLETED BY YOU: Add exception and program logic
             if (activePlayers.Count < MAX_PLAYERS)
             {
@@ -91,6 +84,13 @@ namespace MultiPlayerScramble
         [OperationBehavior]
         public bool guessWord(string playerName, string guessedWord, string unscrambledWord)
         {
+            var play = activePlayers.Find(a=>a.Contains(playerName));
+
+            if (play == null)
+            {
+                
+            }
+
             // TO BE COMPLETED BY YOU: Add exception and program logic
             if (guessedWord == unscrambledWord)
             {

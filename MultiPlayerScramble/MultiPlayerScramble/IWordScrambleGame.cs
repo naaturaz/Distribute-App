@@ -26,6 +26,7 @@ namespace MultiPlayerScramble
 		// User ‘userName’ tries to host the game with word ‘wordToScramble’
 		// The function returns the name of the person hosting the game 
 		// Exception: game is already being hosted by someone else
+        [FaultContract(typeof(GameBeingHostedFault))]
 		[OperationContract]
 		//string hostGame(String userName, String wordToScramble);
         string hostGame(String playerName, string hostAddress, String wordToScramble);
@@ -45,6 +46,7 @@ namespace MultiPlayerScramble
 		// Returns true if ‘guessedWord’ is identical to ‘unscrambledWord’ or false otherwise
 		// The function returns the name of the person hosting the game 
 		// Exception: user is not playing the game 
+        [FaultContract(typeof(PlayerNotPlayingTheGameFault))]
 		[OperationContract]
 		bool guessWord(string playerName, string guessedWord, string unscrambledWord);
 	}
@@ -81,7 +83,7 @@ namespace MultiPlayerScramble
     }
 
     [DataContract]
-    public class GameBeingHostedException  
+    public class GameBeingHostedFault  
     {
         [DataMember]
         public string Reason = "Game is being hosted already";

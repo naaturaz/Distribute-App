@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="HR4Sd7nJ65erEtfhnvfcxihcL94=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Y9QX7heFEa+r4KC6mM2/RdySFQs=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IWordScrambleGame">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IWordScrambleGame" contract="GameService.IWordScrambleGame" bindingType="basicHttpBinding" address="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/" bindingConfiguration="BasicHttpBinding_IWordScrambleGame">
+    <endpoint name="BasicHttpBinding_IWordScrambleGame" contract="GameService.IWordScrambleGame" bindingType="basicHttpBinding" address="http://aatlantis/MultiPlayerScramble.WordScrambleGame.svc" bindingConfiguration="BasicHttpBinding_IWordScrambleGame">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/</serializedValue>
+          <serializedValue>http://aatlantis/MultiPlayerScramble.WordScrambleGame.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

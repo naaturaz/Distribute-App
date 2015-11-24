@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="7f966ecc-7657-4d40-bea8-88282ea48bec" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="fbfc5637-06e4-45b7-aad5-1ef96de6c537" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="ccc2b065-fb99-4db1-bf63-b56aafa6c83f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
-    <MetadataFile FileName="MultiPlayerScramble.xsd" MetadataType="Schema" ID="664d0007-dfd1-4c75-800b-59965754a1be" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="1143d162-603c-47cd-852b-4abd9249047e" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="f2e2c00d-e57c-4ad4-adc5-ff030505e120" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="9580645f-844a-482c-aba0-10adc486e881" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
+    <MetadataFile FileName="MultiPlayerScramble1.xsd" MetadataType="Schema" ID="f8133b81-2c4c-4847-8104-d6c3bbfd1720" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

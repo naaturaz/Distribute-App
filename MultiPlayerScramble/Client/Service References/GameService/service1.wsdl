@@ -2,9 +2,9 @@
 <wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WordScrambleGame" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import namespace="http://tempuri.org/" />
-      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" />
+      <xsd:import schemaLocation="" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IWordScrambleGame_isGameBeingHosted_InputMessage">
@@ -19,14 +19,14 @@
   <wsdl:message name="IWordScrambleGame_hostGame_OutputMessage">
     <wsdl:part name="parameters" element="tns:hostGameResponse" />
   </wsdl:message>
+  <wsdl:message name="IWordScrambleGame_hostGame_GameBeingHostedFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" name="detail" element="q1:GameBeingHostedFault" />
+  </wsdl:message>
   <wsdl:message name="IWordScrambleGame_join_InputMessage">
     <wsdl:part name="parameters" element="tns:join" />
   </wsdl:message>
   <wsdl:message name="IWordScrambleGame_join_OutputMessage">
     <wsdl:part name="parameters" element="tns:joinResponse" />
-  </wsdl:message>
-  <wsdl:message name="IWordScrambleGame_join_MaxPlayersReachedFaultFault_FaultMessage">
-    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" name="detail" element="q1:MaxPlayersReachedFault" />
   </wsdl:message>
   <wsdl:message name="IWordScrambleGame_join_HostCantJoinGameFaultFault_FaultMessage">
     <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" name="detail" element="q2:HostCantJoinGameFault" />
@@ -34,11 +34,17 @@
   <wsdl:message name="IWordScrambleGame_join_GameIsNotBeingHostedFaultFault_FaultMessage">
     <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" name="detail" element="q3:GameIsNotBeingHostedFault" />
   </wsdl:message>
+  <wsdl:message name="IWordScrambleGame_join_MaxPlayersReachedFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" name="detail" element="q4:MaxPlayersReachedFault" />
+  </wsdl:message>
   <wsdl:message name="IWordScrambleGame_guessWord_InputMessage">
     <wsdl:part name="parameters" element="tns:guessWord" />
   </wsdl:message>
   <wsdl:message name="IWordScrambleGame_guessWord_OutputMessage">
     <wsdl:part name="parameters" element="tns:guessWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWordScrambleGame_guessWord_PlayerNotPlayingTheGameFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" name="detail" element="q5:PlayerNotPlayingTheGameFault" />
   </wsdl:message>
   <wsdl:portType name="IWordScrambleGame">
     <wsdl:operation name="isGameBeingHosted">
@@ -48,17 +54,19 @@
     <wsdl:operation name="hostGame">
       <wsdl:input wsaw:Action="http://tempuri.org/IWordScrambleGame/hostGame" message="tns:IWordScrambleGame_hostGame_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWordScrambleGame/hostGameResponse" message="tns:IWordScrambleGame_hostGame_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleGame/hostGameGameBeingHostedFaultFault" name="GameBeingHostedFaultFault" message="tns:IWordScrambleGame_hostGame_GameBeingHostedFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="join">
       <wsdl:input wsaw:Action="http://tempuri.org/IWordScrambleGame/join" message="tns:IWordScrambleGame_join_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWordScrambleGame/joinResponse" message="tns:IWordScrambleGame_join_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleGame/joinMaxPlayersReachedFaultFault" name="MaxPlayersReachedFaultFault" message="tns:IWordScrambleGame_join_MaxPlayersReachedFaultFault_FaultMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleGame/joinHostCantJoinGameFaultFault" name="HostCantJoinGameFaultFault" message="tns:IWordScrambleGame_join_HostCantJoinGameFaultFault_FaultMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleGame/joinGameIsNotBeingHostedFaultFault" name="GameIsNotBeingHostedFaultFault" message="tns:IWordScrambleGame_join_GameIsNotBeingHostedFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleGame/joinMaxPlayersReachedFaultFault" name="MaxPlayersReachedFaultFault" message="tns:IWordScrambleGame_join_MaxPlayersReachedFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="guessWord">
       <wsdl:input wsaw:Action="http://tempuri.org/IWordScrambleGame/guessWord" message="tns:IWordScrambleGame_guessWord_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWordScrambleGame/guessWordResponse" message="tns:IWordScrambleGame_guessWord_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleGame/guessWordPlayerNotPlayingTheGameFaultFault" name="PlayerNotPlayingTheGameFaultFault" message="tns:IWordScrambleGame_guessWord_PlayerNotPlayingTheGameFaultFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IWordScrambleGame" type="tns:IWordScrambleGame">
@@ -80,6 +88,9 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="GameBeingHostedFaultFault">
+        <soap:fault use="literal" name="GameBeingHostedFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="join">
       <soap:operation soapAction="http://tempuri.org/IWordScrambleGame/join" style="document" />
@@ -89,14 +100,14 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="MaxPlayersReachedFaultFault">
-        <soap:fault use="literal" name="MaxPlayersReachedFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="HostCantJoinGameFaultFault">
         <soap:fault use="literal" name="HostCantJoinGameFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="GameIsNotBeingHostedFaultFault">
         <soap:fault use="literal" name="GameIsNotBeingHostedFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="MaxPlayersReachedFaultFault">
+        <soap:fault use="literal" name="MaxPlayersReachedFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="guessWord">
@@ -107,11 +118,14 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="PlayerNotPlayingTheGameFaultFault">
+        <soap:fault use="literal" name="PlayerNotPlayingTheGameFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="WordScrambleGame">
     <wsdl:port name="BasicHttpBinding_IWordScrambleGame" binding="tns:BasicHttpBinding_IWordScrambleGame">
-      <soap:address location="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/" />
+      <soap:address location="http://aatlantis/MultiPlayerScramble.WordScrambleGame.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

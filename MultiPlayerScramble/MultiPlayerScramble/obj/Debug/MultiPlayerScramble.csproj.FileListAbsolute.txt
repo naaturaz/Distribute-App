@@ -9,3 +9,4 @@ F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScr
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.pdb
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.dll
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.csprojResolveAssemblyReference.cache

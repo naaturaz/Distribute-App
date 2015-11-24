@@ -1,0 +1,5 @@
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Release\MultiPlayerScramble.dll.config
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Release\MultiPlayerScramble.dll
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Release\MultiPlayerScramble.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Release\MultiPlayerScramble.dll
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Release\MultiPlayerScramble.pdb

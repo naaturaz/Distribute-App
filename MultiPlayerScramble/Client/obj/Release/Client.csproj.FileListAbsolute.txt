@@ -1,0 +1,8 @@
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\bin\Release\Client.exe.config
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\bin\Release\Client.exe
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\bin\Release\Client.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\bin\Release\MultiPlayerScramble.dll
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\bin\Release\MultiPlayerScramble.pdb
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\obj\Release\Client.csprojResolveAssemblyReference.cache
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\obj\Release\Client.exe
+F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\obj\Release\Client.pdb

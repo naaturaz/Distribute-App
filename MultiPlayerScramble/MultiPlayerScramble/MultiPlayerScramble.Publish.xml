@@ -1,0 +1,9 @@
+<publishData>
+  <publishTarget publishUrl="C:\inetpub\wwwroot\">
+    <file relUrl="bin/MultiPlayerScramble.dll.config" publishTime="11/24/2015 10:33:35" />
+    <file relUrl="bin/MultiPlayerScramble.dll" publishTime="11/24/2015 14:51:59" />
+    <file relUrl="bin/MultiPlayerScramble.pdb" publishTime="11/24/2015 14:51:59" />
+    <file relUrl="MultiPlayerScramble.WordScrambleGame.svc" publishTime="11/24/2015 14:52:00" />
+    <file relUrl="Web.config" publishTime="11/24/2015 10:33:35" />
+  </publishTarget>
+</publishData>

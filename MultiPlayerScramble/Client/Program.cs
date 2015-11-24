@@ -20,21 +20,15 @@ namespace Client
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             Gave();
+
+            Console.WriteLine("end of prog");
             Console.ReadLine();
         }
-
-        static void Testing()
-        {
-            GameService.WordScrambleGameClient prox = new GameService.WordScrambleGameClient();
-
-            Console.WriteLine(prox.hostGame("", "", ""));
-            Console.ReadLine();
-        }
-
-        static WordScrambleGameClient proxy = new WordScrambleGameClient();
 
         static void Gave()
         {
@@ -53,8 +47,10 @@ namespace Client
                 {
                     Console.WriteLine("Type the word to scramble.");
                     string inputWord = Console.ReadLine();
+
                     string scrambledWord = proxy.hostGame(playerName, "", inputWord);
                     canPlayGame = false;
+
                     Console.WriteLine("You're hosting the game with word '" + inputWord + "' scrambled as '" + scrambledWord + "'");
                     Console.ReadKey();
                 }
@@ -102,7 +98,7 @@ namespace Client
                 }
             }
 
-            Gave();
+            //Gave();
         }
     }
 }

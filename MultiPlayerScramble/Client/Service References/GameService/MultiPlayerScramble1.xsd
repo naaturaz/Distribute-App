@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MultiPlayerScramble" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="GameBeingHostedFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GameBeingHostedFault" nillable="true" type="tns:GameBeingHostedFault" />
   <xs:complexType name="Word">
     <xs:sequence>
       <xs:element minOccurs="0" name="scrambledWord" nillable="true" type="xs:string" />
@@ -7,12 +13,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Word" nillable="true" type="tns:Word" />
-  <xs:complexType name="MaxPlayersReachedFault">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="MaxPlayersReachedFault" nillable="true" type="tns:MaxPlayersReachedFault" />
   <xs:complexType name="HostCantJoinGameFault">
     <xs:sequence>
       <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
@@ -25,4 +25,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="GameIsNotBeingHostedFault" nillable="true" type="tns:GameIsNotBeingHostedFault" />
+  <xs:complexType name="MaxPlayersReachedFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MaxPlayersReachedFault" nillable="true" type="tns:MaxPlayersReachedFault" />
+  <xs:complexType name="PlayerNotPlayingTheGameFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlayerNotPlayingTheGameFault" nillable="true" type="tns:PlayerNotPlayingTheGameFault" />
 </xs:schema>
