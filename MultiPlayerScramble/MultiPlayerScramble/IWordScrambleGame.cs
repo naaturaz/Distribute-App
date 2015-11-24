@@ -33,7 +33,9 @@ namespace MultiPlayerScramble
 		// Player ‘playerName’ tries to join the game
 		// The function returns a Word object containing the host’s (un)scrambled words
 		// Exception: maximum number of players reached
+        [FaultContract(typeof(MaxPlayersReachedFault))]
 		// Exception: host cannot join the game
+        [FaultContract(typeof(HostCantJoinGameFault))]
 		// Exception: nobody is hosting the game
         [FaultContract(typeof(GameIsNotBeingHostedFault))]
 		[OperationContract]
@@ -55,4 +57,40 @@ namespace MultiPlayerScramble
 		[DataMember]
 		public string scrambledWord;
 	}
+
+
+    [DataContract]
+    public class MaxPlayersReachedFault
+    {
+        [DataMember]
+        public string Reason = "Maximum players reached";
+    }
+
+    [DataContract]
+    public class HostCantJoinGameFault
+    {
+        [DataMember]
+        public string Reason = "Host can't join the game";
+    }
+
+    [DataContract]
+    public class GameIsNotBeingHostedFault
+    {
+        [DataMember]
+        public string Reason = "Game is not being hosted";
+    }
+
+    [DataContract]
+    public class GameBeingHostedException  
+    {
+        [DataMember]
+        public string Reason = "Game is being hosted already";
+    }
+
+    [DataContract]
+    public class PlayerNotPlayingTheGameFault
+    {
+        [DataMember]
+        public string Reason = "Player not playing the game";
+    }
 }

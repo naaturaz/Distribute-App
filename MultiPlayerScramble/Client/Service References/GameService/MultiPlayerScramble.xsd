@@ -7,6 +7,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Word" nillable="true" type="tns:Word" />
+  <xs:complexType name="MaxPlayersReachedFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MaxPlayersReachedFault" nillable="true" type="tns:MaxPlayersReachedFault" />
+  <xs:complexType name="HostCantJoinGameFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HostCantJoinGameFault" nillable="true" type="tns:HostCantJoinGameFault" />
   <xs:complexType name="GameIsNotBeingHostedFault">
     <xs:sequence>
       <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />

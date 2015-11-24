@@ -22,25 +22,8 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            //Gave();
-
-            Join();
-
+            Gave();
             Console.ReadLine();
-
-        }
-
-        private static void Join()
-        {
-            try
-            {
-                Word gameWords = proxy.join("lala");
-            }
-            catch (FaultException fault)
-            {
-                Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Reason);
-            }
-            proxy.Close();
         }
 
         static void Testing()
@@ -81,7 +64,28 @@ namespace Client
                 Console.WriteLine("Do you want to play the game?");
                 if (Console.ReadLine().CompareTo("yes") == 0)
                 {
-                    Word gameWords = proxy.join(playerName);
+                    Word gameWords;
+
+                    try
+                    {
+                        gameWords = proxy.join(playerName);
+                    }
+                    catch (FaultException<MaxPlayersReachedFault> fault)
+                    {
+                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        return;
+                    }
+                    catch (FaultException<HostCantJoinGameFault> fault)
+                    {
+                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        return;
+                    }
+                    catch (FaultException<GameIsNotBeingHostedFault> fault)
+                    {
+                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        return;
+                    }
+
                     Console.WriteLine("Can you unscramble this word? => " + gameWords.scrambledWord);
                     String guessedWord;
                     bool gameOver = false;
@@ -98,7 +102,7 @@ namespace Client
                 }
             }
 
-            //Gave();
+            Gave();
         }
     }
 }

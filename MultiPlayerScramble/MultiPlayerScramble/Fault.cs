@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,10 +21,5 @@ namespace MultiPlayerScramble
     {
     }
 
-    [DataContract]
-    public class GameIsNotBeingHostedFault
-    {
-        [DataMember]
-        public string Reason = "Game is not being hosted";
-    }
+
 }

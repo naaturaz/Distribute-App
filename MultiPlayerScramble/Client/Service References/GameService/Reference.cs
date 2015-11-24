@@ -28,6 +28,8 @@ namespace Client.GameService {
         System.Threading.Tasks.Task<string> hostGameAsync(string playerName, string hostAddress, string wordToScramble);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleGame/join", ReplyAction="http://tempuri.org/IWordScrambleGame/joinResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(MultiPlayerScramble.MaxPlayersReachedFault), Action="http://tempuri.org/IWordScrambleGame/joinMaxPlayersReachedFaultFault", Name="MaxPlayersReachedFault", Namespace="http://schemas.datacontract.org/2004/07/MultiPlayerScramble")]
+        [System.ServiceModel.FaultContractAttribute(typeof(MultiPlayerScramble.HostCantJoinGameFault), Action="http://tempuri.org/IWordScrambleGame/joinHostCantJoinGameFaultFault", Name="HostCantJoinGameFault", Namespace="http://schemas.datacontract.org/2004/07/MultiPlayerScramble")]
         [System.ServiceModel.FaultContractAttribute(typeof(MultiPlayerScramble.GameIsNotBeingHostedFault), Action="http://tempuri.org/IWordScrambleGame/joinGameIsNotBeingHostedFaultFault", Name="GameIsNotBeingHostedFault", Namespace="http://schemas.datacontract.org/2004/07/MultiPlayerScramble")]
         MultiPlayerScramble.Word join(string playerName);
         

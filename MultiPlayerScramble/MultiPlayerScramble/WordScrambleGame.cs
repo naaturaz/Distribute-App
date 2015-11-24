@@ -53,34 +53,39 @@ namespace MultiPlayerScramble
         [OperationBehavior]
         public Word join(string playerName)
         {
-            //if (!isGameBeingHosted())
-            //{
-            //    throw new FaultException<GameIsNotBeingHostedFault>(new GameIsNotBeingHostedFault());
-            //}
-
-            try
-            {
-                test.scrambledWord.ToString();
-                return new Word();
-            }
-            catch (NullReferenceException e)
+            if (!isGameBeingHosted())
             {
                 throw new FaultException<GameIsNotBeingHostedFault>(new GameIsNotBeingHostedFault());
-                //throw new FaultException(e.Message, new FaultCode("GameIsNotBeingHostedFault"));
+            }
+            if (playerName == userHostingTheGame)
+            {
+                throw new FaultException<HostCantJoinGameFault>(new HostCantJoinGameFault());
             }
 
-            //// TO BE COMPLETED BY YOU: Add exception and program logic
-            //if (activePlayers.Count < MAX_PLAYERS)
+            //try
             //{
-            //    activePlayers.Add(playerName);
+            //    test.scrambledWord.ToString();
+            //    return new Word();
             //}
-            ////cant have more than 5 players
-            //else
+            //catch (NullReferenceException e)
             //{
-            //    throw new FaultException<GameIsNotBeingHostedFault>(new GameIsNotBeingHostedFault());
+            //    var fal = new GameIsNotBeingHostedFault();
+            //    throw new FaultException<GameIsNotBeingHostedFault>(fal);
+            //    //throw new FaultException(e.Message, new FaultCode("GameIsNotBeingHostedFault"));
             //}
 
-            //return gameWords;
+            // TO BE COMPLETED BY YOU: Add exception and program logic
+            if (activePlayers.Count < MAX_PLAYERS)
+            {
+                activePlayers.Add(playerName);
+            }
+            //cant have more than 5 players
+            else
+            {
+                throw new FaultException<MaxPlayersReachedFault>(new MaxPlayersReachedFault());
+            }
+
+            return gameWords;
         }
 
         [OperationBehavior]
