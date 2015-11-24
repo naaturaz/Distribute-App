@@ -1,0 +1,6 @@
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.dll.config
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.dll
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.pdb
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.csprojResolveAssemblyReference.cache
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.dll
+F:\DesktopSSD\Documents\5th Sem\PROG3170 Distr App\Proj\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.pdb
