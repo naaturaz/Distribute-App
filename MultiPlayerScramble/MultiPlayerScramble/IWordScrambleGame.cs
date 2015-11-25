@@ -1,5 +1,5 @@
 ﻿/**
- *  File Name: Program.cs
+ *  File Name: IWordScrambleGame.cs
  *  Class the hold the Interface of the service  
  *
  *  Revision History:
@@ -16,6 +16,9 @@ using System.Text;
 
 namespace MultiPlayerScramble
 {
+    /// <summary>
+    /// IWordScrambleGame interface
+    /// </summary>
     [ServiceContract]
     public interface IWordScrambleGame
 	{
@@ -51,6 +54,9 @@ namespace MultiPlayerScramble
 		bool guessWord(string playerName, string guessedWord, string unscrambledWord);
 	}
 
+    /// <summary>
+    /// Word class data contract 
+    /// </summary>
 	[DataContract]
 	public class Word
 	{
@@ -60,7 +66,9 @@ namespace MultiPlayerScramble
 		public string scrambledWord;
 	}
 
-
+    /// <summary>
+    /// Max Players Reached Fault
+    /// </summary>
     [DataContract]
     public class MaxPlayersReachedFault
     {
@@ -68,6 +76,9 @@ namespace MultiPlayerScramble
         public string Reason = "Maximum players reached";
     }
 
+    /// <summary>
+    /// Host cant join game fault
+    /// </summary>
     [DataContract]
     public class HostCantJoinGameFault
     {
@@ -75,6 +86,9 @@ namespace MultiPlayerScramble
         public string Reason = "Host can't join the game";
     }
 
+    /// <summary>
+    /// Game is not being hosted fault
+    /// </summary>
     [DataContract]
     public class GameIsNotBeingHostedFault
     {
@@ -82,6 +96,9 @@ namespace MultiPlayerScramble
         public string Reason = "Game is not being hosted";
     }
 
+    /// <summary>
+    /// Game being hosted fault 
+    /// </summary>
     [DataContract]
     public class GameBeingHostedFault  
     {
@@ -89,6 +106,9 @@ namespace MultiPlayerScramble
         public string Reason = "Game is being hosted already";
     }
 
+    /// <summary>
+    /// Player not playing the game fault 
+    /// </summary>
     [DataContract]
     public class PlayerNotPlayingTheGameFault
     {

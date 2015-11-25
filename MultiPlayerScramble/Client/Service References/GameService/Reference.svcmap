@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="452f7b4d-e360-48d6-9032-7297fee238fd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b61a4ac-6b36-4bc8-a67a-0c49b6eee269" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="1143d162-603c-47cd-852b-4abd9249047e" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
-    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="f2e2c00d-e57c-4ad4-adc5-ff030505e120" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
-    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="9580645f-844a-482c-aba0-10adc486e881" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
-    <MetadataFile FileName="MultiPlayerScramble1.xsd" MetadataType="Schema" ID="f8133b81-2c4c-4847-8104-d6c3bbfd1720" SourceId="1" SourceUrl="http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="913cb2b0-1d74-49a0-861c-c97fc98be7df" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="22414418-d7d1-4588-9b70-014a09d061a8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="e2cdcb8c-85d5-4ccc-87a1-8baae77a3a7a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
+    <MetadataFile FileName="MultiPlayerScramble.xsd" MetadataType="Schema" ID="86d1aee3-a25b-4df0-a7df-15ee722995ab" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MultiPlayerScramble/Service1/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

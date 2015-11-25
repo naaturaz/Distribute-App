@@ -16,21 +16,43 @@ using System.Threading.Tasks;
 using Client.GameService;
 using MultiPlayerScramble;
 
+//IIS http://localhost/MultiPlayerScramble.WordScrambleGame.svc/mex
+
 namespace Client
 {
+    /// <summary>
+    /// Client main class
+    /// </summary>
     class Program
     {
-        
-
+        /// <summary>
+        /// Main method
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Gave();
-
+            Input();
             Console.WriteLine("end of prog");
             Console.ReadLine();
         }
 
-        static void Gave()
+        static void Test(WordScrambleGameClient proxy)
+        {
+            //try
+            //{
+            //    proxy.guessWord("cuco2", "cucoPala", "papa");
+            //}
+            //catch (FaultException<PlayerNotPlayingTheGameFault> fault)
+            //{
+            //    Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+            //    return;
+            //}
+        }
+
+        /// <summary>
+        /// Input Method 
+        /// </summary>
+        static void Input()
         {
             WordScrambleGameClient proxy = new WordScrambleGameClient();
 
@@ -97,8 +119,6 @@ namespace Client
                     Console.WriteLine("You WON!!!");
                 }
             }
-
-            //Gave();
         }
     }
 }
