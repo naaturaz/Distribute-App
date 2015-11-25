@@ -68,7 +68,7 @@ namespace MultiPlayerScramble
             }
 
             // TO BE COMPLETED BY YOU: Add exception and program logic
-            if (activePlayers.Count < MAX_PLAYERS)
+            if (activePlayers.Count + 1 < MAX_PLAYERS)
             {
                 activePlayers.Add(playerName);
             }
