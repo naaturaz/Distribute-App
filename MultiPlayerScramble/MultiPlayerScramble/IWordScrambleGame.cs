@@ -68,6 +68,7 @@ namespace MultiPlayerScramble
 
     /// <summary>
     /// Max Players Reached Fault
+    /// Raised if a 6th player tries to join the game 
     /// </summary>
     [DataContract]
     public class MaxPlayersReachedFault
@@ -78,6 +79,7 @@ namespace MultiPlayerScramble
 
     /// <summary>
     /// Host cant join game fault
+    /// The host of a game cannot play the game
     /// </summary>
     [DataContract]
     public class HostCantJoinGameFault
@@ -88,6 +90,7 @@ namespace MultiPlayerScramble
 
     /// <summary>
     /// Game is not being hosted fault
+    /// Raised if a player tries to join a game and no game was hosted before that 
     /// </summary>
     [DataContract]
     public class GameIsNotBeingHostedFault
@@ -98,6 +101,7 @@ namespace MultiPlayerScramble
 
     /// <summary>
     /// Game being hosted fault 
+    /// Will be raised if two players are trying to host a game at the same time
     /// </summary>
     [DataContract]
     public class GameBeingHostedFault  
@@ -108,6 +112,7 @@ namespace MultiPlayerScramble
 
     /// <summary>
     /// Player not playing the game fault 
+    /// Will be raised if service went down, then service gets restarted and player keeps playing
     /// </summary>
     [DataContract]
     public class PlayerNotPlayingTheGameFault
