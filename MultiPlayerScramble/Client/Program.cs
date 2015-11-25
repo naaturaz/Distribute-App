@@ -32,21 +32,7 @@ namespace Client
         static void Main(string[] args)
         {
             Input();
-            Console.WriteLine("end of prog");
             Console.ReadLine();
-        }
-
-        static void Test(WordScrambleGameClient proxy)
-        {
-            //try
-            //{
-            //    proxy.guessWord("cuco2", "cucoPala", "papa");
-            //}
-            //catch (FaultException<PlayerNotPlayingTheGameFault> fault)
-            //{
-            //    Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
-            //    return;
-            //}
         }
 
         /// <summary>
@@ -70,11 +56,19 @@ namespace Client
                     Console.WriteLine("Type the word to scramble.");
                     string inputWord = Console.ReadLine();
 
-                    string scrambledWord = proxy.hostGame(playerName, "", inputWord);
-                    canPlayGame = false;
+                    try
+                    {
+                        string scrambledWord = proxy.hostGame(playerName, "", inputWord);
+                        canPlayGame = false;
 
-                    Console.WriteLine("You're hosting the game with word '" + inputWord + "' scrambled as '" + scrambledWord + "'");
-                    Console.ReadKey();
+                        Console.WriteLine("You're hosting the game with word '" + inputWord + "' scrambled as '" + scrambledWord + "'");
+                        Console.ReadKey();
+                    }
+                    catch (FaultException<GameBeingHostedFault> fault)
+                    {
+                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        return;
+                    }
                 }
             }
             if (canPlayGame)
@@ -110,7 +104,17 @@ namespace Client
                     while (!gameOver)
                     {
                         guessedWord = Console.ReadLine();
-                        gameOver = proxy.guessWord(playerName, guessedWord, gameWords.unscrambledWord);
+
+                        try
+                        {
+                            gameOver = proxy.guessWord(playerName, guessedWord, gameWords.unscrambledWord);
+                        }
+                        catch (FaultException<PlayerNotPlayingTheGameFault> fault)
+                        {
+                            Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                            return;
+                        }
+
                         if (!gameOver)
                         {
                             Console.WriteLine("Nope, try again...");

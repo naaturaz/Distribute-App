@@ -14,3 +14,11 @@ F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\bin\Deb
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\obj\Debug\Client.exe
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\Client\obj\Debug\Client.pdb
+C:\T\Distribute-App\MultiPlayerScramble\Client\bin\Debug\Client.exe.config
+C:\T\Distribute-App\MultiPlayerScramble\Client\obj\Debug\Client.exe
+C:\T\Distribute-App\MultiPlayerScramble\Client\obj\Debug\Client.pdb
+C:\T\Distribute-App\MultiPlayerScramble\Client\bin\Debug\Client.exe
+C:\T\Distribute-App\MultiPlayerScramble\Client\bin\Debug\Client.pdb
+C:\T\Distribute-App\MultiPlayerScramble\Client\bin\Debug\MultiPlayerScramble.dll
+C:\T\Distribute-App\MultiPlayerScramble\Client\bin\Debug\MultiPlayerScramble.pdb
+C:\T\Distribute-App\MultiPlayerScramble\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache

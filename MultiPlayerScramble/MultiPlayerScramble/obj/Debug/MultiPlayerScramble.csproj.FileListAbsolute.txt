@@ -10,3 +10,9 @@ F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScr
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.dll
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.pdb
 F:\DesktopSSD\Documents\GitHub\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.csprojResolveAssemblyReference.cache
+C:\T\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.dll.config
+C:\T\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.dll
+C:\T\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\bin\Debug\MultiPlayerScramble.pdb
+C:\T\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.csprojResolveAssemblyReference.cache
+C:\T\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.dll
+C:\T\Distribute-App\MultiPlayerScramble\MultiPlayerScramble\obj\Debug\MultiPlayerScramble.pdb
