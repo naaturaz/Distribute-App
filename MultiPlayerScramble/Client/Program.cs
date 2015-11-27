@@ -66,7 +66,7 @@ namespace Client
                     }
                     catch (FaultException<GameBeingHostedFault> fault)
                     {
-                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        Console.WriteLine(fault.Detail.Reason);
                         return;
                     }
                 }
@@ -84,17 +84,17 @@ namespace Client
                     }
                     catch (FaultException<MaxPlayersReachedFault> fault)
                     {
-                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        Console.WriteLine(fault.Detail.Reason);
                         return;
                     }
                     catch (FaultException<HostCantJoinGameFault> fault)
                     {
-                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        Console.WriteLine(fault.Detail.Reason);
                         return;
                     }
                     catch (FaultException<GameIsNotBeingHostedFault> fault)
                     {
-                        Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                        Console.WriteLine(fault.Detail.Reason);
                         return;
                     }
 
@@ -111,7 +111,7 @@ namespace Client
                         }
                         catch (FaultException<PlayerNotPlayingTheGameFault> fault)
                         {
-                            Console.WriteLine("{0}:{1}", fault.Code.Name, fault.Detail.Reason);
+                            Console.WriteLine(fault.Detail.Reason);
                             return;
                         }
 
